@@ -1,0 +1,21 @@
+<%= form_for(@pettype) do |f| %>
+  <% if @pettype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pettype.errors.count, "error") %> prohibited this pettype from being saved:</h2>
+
+      <ul>
+      <% @pettype.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

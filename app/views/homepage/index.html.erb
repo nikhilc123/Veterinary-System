@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="jumbotron" align="center">
+
+    <h1><i><class="text">Veterinary Management System</class><i></h1>
+    <p class="lead"><i>Home Page for Veterinary</i></p>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Owner</h2>
+      <br><p class="lead">This section represents list of all the doctor which are available! Click below to
+       view more in detail!</p>
+      <br><p><a class="btn btn-lg btn-primary" href=<%= doctors_path %>  role="button">Owner</a></p>
+    </div>
+
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Receptionist</h2>
+     <br> <p class="lead">This section belongs to Appointment details. 
+           Click below to make an Appointment!.</p>
+     <br><p><a class="btn btn-lg btn-primary" href=<%= new_appointment_path %>  role="button">Receptionist</a></p>
+    </div>
+
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Doctor</h2>
+      <br><p class="lead">This Section represents Pet Details. Click below to view in detail and make an appointment</p>
+      <br><p><a class="btn btn-lg btn-primary" href=<%= new_pet_path %>  role="button">Doctor</a></p>
+    </div>
+
+    <div class="col-md-2" align="center">
+      <h2 class="form-signin-heading">Customer</h2>
+     <p class="lead">This section represents more information on next appointments.Click below to see the next appointment
+      of your pet</p>
+
+      <p><a class="btn btn-lg btn-primary" href=<%= customers_index_path %>  role="button">Customer</a></p>
+    </div>
+
+
+
+    </div>
+</div>
